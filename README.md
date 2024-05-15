@@ -1,4 +1,4 @@
-### Git Cheat Sheet auf Deutsch (Erweiterte Befehle)
+### Git Cheat Sheet 
 
 #### SETUP & INIT
 Konfigurieren von Benutzerinformationen, Initialisieren und Klonen von Repositories
