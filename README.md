@@ -7,8 +7,6 @@ Konfigurieren von Benutzerinformationen, Initialisieren und Klonen von Repositor
   - Setze einen Namen, der zur Identifikation bei der Versionshistorie verwendet wird.
 - `git config --global user.email "[gültige Email]"`
   - Setze eine E-Mail-Adresse, die mit jedem Versionshinweis verbunden wird.
-- `git config --global color.ui auto`
-  - Setze automatische Befehlszeilen-Farbgebung für Git für einfache Überprüfung.
 - `git config --list`
   - Zeige alle aktuell konfigurierten Einstellungen an.
 - `git init`
@@ -43,10 +41,12 @@ Isolieren von Arbeiten in Branches, Wechseln des Kontextes und Integrieren von �
   - Liste deine Branches auf. Ein * erscheint neben dem aktuell aktiven Branch.
 - `git branch [Branch-Name]`
   - Erstelle einen neuen Branch an der aktuellen Commit-Stelle.
+- `git switch -c [Branch-Name]` oder `git checkout -b [Branch-Name]`
+  - Erstelle einen neuen Branch und wechsele hin.
+- `git switch [Branch-Name]`
+  - Wechsle zu einem anderen Branch.
 - `git checkout`
   - Wechsle zu einem anderen Branch und checke ihn in dein Arbeitsverzeichnis aus.
-- `git switch [Branch-Name]`
-  - Wechsle zu einem anderen Branch (ab Git 2.23).
 - `git merge [Branch]`
   - Führe die Geschichte des angegebenen Branches in den aktuellen Branch ein.
 - `git log`
@@ -123,13 +123,6 @@ Untersuchen von Logs, Unterschieden und Objektinformationen
   - Zeige die Unterschiede, die auf BranchA vorhanden sind, aber nicht auf BranchB.
 - `git show [SHA]`
   - Zeige jedes Objekt in Git in einem menschenlesbaren Format an.
-
-#### IGNORING PATTERNS
-Verhindern von unbeabsichtigtem Staging oder Commit von Dateien
-
-- `git config --global core.excludesfile [Datei]`
-  - Systemweites Ignore-Muster für alle lokalen Repositories.
-- Speichere eine Datei mit den gewünschten Mustern als `.gitignore` mit entweder direkten String-Matches oder Platzhalter-Globs.
 
 #### HILFE & DOKUMENTATION
 Informationen und Dokumentation zu Git-Befehlen abrufen
