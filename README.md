@@ -105,6 +105,8 @@ Branches umschreiben, Commits aktualisieren und Geschichte bereinigen
 
 - `git rebase [Branch]`
   - Wende alle Commits des aktuellen Branches vor dem angegebenen Branch an.
+- `git rebase --continue`
+  - Gelösten Konflikte übernehmen und den Rebase fortsetzen.
 - `git reset --hard [Commit]`
   - Leere den Staging-Bereich und schreibe den Arbeitsbaum ab dem angegebenen Commit neu.
 
