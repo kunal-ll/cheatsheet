@@ -1,4 +1,4 @@
-### Git Cheat Sheet 
+![image](https://github.com/kunal-ll/cheatsheet/assets/125499349/cdd1bde8-90d1-49a5-8be9-0a553fab9944)### Git Cheat Sheet 
 
 #### SETUP & INIT
 Konfigurieren von Benutzerinformationen, Initialisieren und Klonen von Repositories
@@ -37,6 +37,7 @@ Arbeiten mit Snapshots und dem Git-Staging-Bereich
 #### BRANCH & MERGE
 Isolieren von Arbeiten in Branches, Wechseln des Kontextes und Integrieren von Änderungen
 
+
 - `git branch`
   - Liste deine Branches auf. Ein * erscheint neben dem aktuell aktiven Branch.
 - `git branch [Branch-Name]`
@@ -53,7 +54,8 @@ Isolieren von Arbeiten in Branches, Wechseln des Kontextes und Integrieren von �
   - Zeige alle Commits in der Geschichte des aktuellen Branches an.
 
 #### SHARE & UPDATE
-Abrufen von Updates aus einem anderen Repository und Aktualisieren lokaler Repositories
+Abrufen von Updates aus einem anderen Repository und Aktualisieren lokaler Repositories (origin ist der Standard-Name bzw. der Alias, der Git automatisch dem Remote-Repository zuweist, wenn ein Repository geklont wird).
+
 
 - `git remote add [Alias] [URL]`
   - Füge eine Git-URL als Alias hinzu.
