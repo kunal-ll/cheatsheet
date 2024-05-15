@@ -1,5 +1,4 @@
-# Cheatsheet
-### Git Cheat Sheet auf Deutsch
+### Git Cheat Sheet auf Deutsch (Erweiterte Befehle)
 
 #### SETUP & INIT
 Konfigurieren von Benutzerinformationen, Initialisieren und Klonen von Repositories
@@ -10,6 +9,8 @@ Konfigurieren von Benutzerinformationen, Initialisieren und Klonen von Repositor
   - Setze eine E-Mail-Adresse, die mit jedem Versionshinweis verbunden wird.
 - `git config --global color.ui auto`
   - Setze automatische Befehlszeilen-Farbgebung für Git für einfache Überprüfung.
+- `git config --list`
+  - Zeige alle aktuell konfigurierten Einstellungen an.
 - `git init`
   - Initialisiere ein bestehendes Verzeichnis als Git-Repository.
 - `git clone [URL]`
@@ -22,14 +23,18 @@ Arbeiten mit Snapshots und dem Git-Staging-Bereich
   - Zeige modifizierte Dateien im Arbeitsverzeichnis an, die für deinen nächsten Commit vorgemerkt sind.
 - `git add [Datei]`
   - Füge eine Datei, wie sie jetzt aussieht, deinem nächsten Commit hinzu (Stage).
-- `git reset [Datei]`
-  - Entferne eine Datei aus dem Staging-Bereich, behalte aber die Änderungen im Arbeitsverzeichnis.
 - `git diff`
   - Zeige Unterschiede zwischen Arbeitsverzeichnis und Staging-Bereich.
 - `git diff --staged`
   - Zeige Unterschiede zwischen Staging-Bereich und letztem Commit.
 - `git commit -m "[beschreibende Nachricht]"`
   - Committe deinen vorgemerkten Inhalt als neuen Commit-Snapshot.
+- `git restore --staged [Datei]`
+  - Entferne eine Datei aus dem Staging-Bereich, behalte aber die Änderungen im Arbeitsverzeichnis.
+- `git restore [Datei]`
+  - Verwerfe Änderungen im Arbeitsverzeichnis und stelle die Datei aus dem letzten Commit wieder her.
+- `git show`
+  - Zeige Änderungen, die in einem bestimmten Commit gemacht wurden, an.
 
 #### BRANCH & MERGE
 Isolieren von Arbeiten in Branches, Wechseln des Kontextes und Integrieren von Änderungen
@@ -41,7 +46,7 @@ Isolieren von Arbeiten in Branches, Wechseln des Kontextes und Integrieren von �
 - `git checkout`
   - Wechsle zu einem anderen Branch und checke ihn in dein Arbeitsverzeichnis aus.
 - `git switch [Branch-Name]`
-  - Wechsel zu einem anderen Branch (ab Git 2.23).
+  - Wechsle zu einem anderen Branch (ab Git 2.23).
 - `git merge [Branch]`
   - Führe die Geschichte des angegebenen Branches in den aktuellen Branch ein.
 - `git log`
@@ -60,6 +65,20 @@ Abrufen von Updates aus einem anderen Repository und Aktualisieren lokaler Repos
   - Übertrage lokale Branch-Commits in den Remote-Repository-Branch.
 - `git pull`
   - Hole und merge alle Commits vom verfolgten Remote-Branch.
+- `git remote`
+  - Zeige die Namen aller konfigurierten Remotes an.
+- `git remote -v`
+  - Zeige die URL und den Namen für alle konfigurierten Remotes an.
+- `git remote show [Remote-Name]`
+  - Zeige detaillierte Informationen zu einem Remote an.
+- `git push [Remote-Name] --delete [Branch-Name]`
+  - Lösche einen Remote-Branch.
+- `git branch -r`
+  - Zeige alle Remote-Branches an.
+- `git push [Remote-Name] [Branch-Name]`
+  - Pushe einen lokalen Branch zu einem Remote-Repository.
+- `git push -u [Remote-Name] [Branch-Name]`
+  - Setze den Upstream für den lokalen Branch und pushe ihn zu einem Remote-Repository.
 
 #### TRACKING PATH CHANGES
 Versionierung von Datei-Entfernungen und Pfadänderungen
@@ -111,3 +130,13 @@ Verhindern von unbeabsichtigtem Staging oder Commit von Dateien
 - `git config --global core.excludesfile [Datei]`
   - Systemweites Ignore-Muster für alle lokalen Repositories.
 - Speichere eine Datei mit den gewünschten Mustern als `.gitignore` mit entweder direkten String-Matches oder Platzhalter-Globs.
+
+#### HILFE & DOKUMENTATION
+Informationen und Dokumentation zu Git-Befehlen abrufen
+
+- `git --help`
+  - Zeige die allgemeine Hilfeseite von Git an.
+- `git [Befehl] --help`
+  - Zeige die Hilfeseite für den angegebenen Git-Befehl an.
+- `git help [Befehl]`
+  - Zeige die Hilfeseite für den angegebenen Git-Befehl an.
