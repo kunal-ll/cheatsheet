@@ -87,8 +87,6 @@ Versionierung von Datei-Entfernungen und Pfadänderungen
   - Lösche die Datei aus dem Projekt und markiere die Entfernung für den Commit.
 - `git mv [existierender Pfad] [neuer Pfad]`
   - Ändere einen bestehenden Dateipfad und markiere die Änderung für den Commit.
-- `git log --stat -M`
-  - Zeige alle Commit-Logs mit Angabe aller verschobenen Pfade an.
 
 #### TEMPORARY COMMITS
 Temporäres Speichern modifizierter, getrackter Dateien, um Branches zu wechseln
@@ -119,6 +117,8 @@ Untersuchen von Logs, Unterschieden und Objektinformationen
   - Zeige die Commits auf BranchA an, die nicht auf BranchB sind.
 - `git log --follow [Datei]`
   - Zeige die Commits an, die die Datei geändert haben, auch über Umbenennungen hinweg.
+- git log --oneline --all --graph
+  - Zeige eine einzeilige Zusammenfassung aller Commits in allen Branches in einer grafischen Darstellung.
 - `git diff branchB...branchA`
   - Zeige die Unterschiede, die auf BranchA vorhanden sind, aber nicht auf BranchB.
 - `git show [SHA]`
