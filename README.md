@@ -77,8 +77,6 @@ Abrufen von Updates aus einem anderen Repository und Aktualisieren lokaler Repos
   - Zeige alle Remote-Branches an.
 - `git push [Remote-Name] [Branch-Name]`
   - Pushe einen lokalen Branch zu einem Remote-Repository.
-- `git push -u [Remote-Name] [Branch-Name]`
-  - Setze den Upstream für den lokalen Branch und pushe ihn zu einem Remote-Repository.
 
 #### TRACKING PATH CHANGES
 Versionierung von Datei-Entfernungen und Pfadänderungen
