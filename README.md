@@ -1,4 +1,4 @@
-![image](https://github.com/kunal-ll/cheatsheet/assets/125499349/cdd1bde8-90d1-49a5-8be9-0a553fab9944)### Git Cheat Sheet 
+### Git Cheat Sheet 
 
 #### SETUP & INIT
 Konfigurieren von Benutzerinformationen, Initialisieren und Klonen von Repositories
